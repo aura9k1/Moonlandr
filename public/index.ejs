@@ -14,15 +14,16 @@
 
 <body id="body" onload="render_view();">
 
-    <div class="center">
-        <img class="logo" src="/logo.png">
-        <h1 id="title"> Moonlandr</h1>
+    <div class="topbar">
+        <div class="row top">
+            <img class="logo" src="/logo.png">
+            <h1 id="title"> Moonlandr</h1>
+        </div>
+        <div id="timestamp" class="timestamp"></div>
+        <div id="weather" class="weather"></div>
     </div>
-    <div id="timestamp" class="timestamp">...</div>
-    <div id="weather" class="weather">...</div>
-    <hr>
     <div class="content">
-        <div class="row" id="services">No Services</div>
+        <div class="row cards" id="services">No Services</div>
     </div>
     <span id="data" hidden><%=data%></span>
 </body>
