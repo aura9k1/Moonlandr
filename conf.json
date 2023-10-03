@@ -1,17 +1,16 @@
 {
     "owner": "Josh",
-    "host": "http://192.168.1.105",
     "services": [{
             "name": "Cockpit",
-            "port": "9090"
+            "url": "http://192.168.1.105:9090"
         },
         {
             "name": "Portainer",
-            "port": "9000"
+            "url": "http://192.168.1.105:9000"
         },
         {
             "name": "Home Assistant",
-            "port": "8123"
+            "url": "http://192.168.1.105:8123"
         }
     ]
 }

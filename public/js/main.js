@@ -20,7 +20,7 @@ function update_services() {
     document.getElementById("services").innerHTML = "";
     for (var i = 0; i < data.services.length; i++) {
         document.getElementById("services").innerHTML += `
-        <div  title="${data.host}:${data.services[i].port}" class="card" onclick="window.open('${data.host}:${data.services[i].port}')">
+        <div class="card" onclick="window.open('${data.services[i].url}')">
             <h3>${data.services[i].name}</h3>
         </div>`
     }
