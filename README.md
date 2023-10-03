@@ -1,3 +1,4 @@
+![logo](https://github.com/aura9k1/Moonlandr/blob/main/public/favicon/android-chrome-192x192.png) 
 # Moonlandr
 
 ## About
