@@ -30,6 +30,10 @@ body {
     opacity: 0;
 }
 
+b {
+    margin: 1rem;
+}
+
 .show {
     opacity: 1;
     transition: 1s ease-in-out all;
@@ -131,6 +135,7 @@ h3 {
 }
 
 .top {
+    left: 0;
     margin-right: auto;
     float: left;
     flex: 1;

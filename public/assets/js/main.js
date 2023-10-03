@@ -6,6 +6,7 @@ function render_view() {
     update_title();
     update_bg();
     update_services();
+    update_automations();
     tick();
 
     document.getElementById("body").classList.add("show");
@@ -21,7 +22,19 @@ function update_title() {
     document.getElementById("title").title = `${data.host}`;
 }
 
+function update_automations() {
+    if (!data?.automations) return;
+    document.getElementById("automations").innerHTML = "";
+    for (var i = 0; i < data.automations.length; i++) {
+        document.getElementById("automations").innerHTML += `
+        <div class="card" onclick="window.open('${data.automations[i].url}')">
+            <h3>${data.automations[i].name}</h3>
+        </div>`
+    }
+}
+
 function update_services() {
+    if (!data?.services) return;
     document.getElementById("services").innerHTML = "";
     for (var i = 0; i < data.services.length; i++) {
         document.getElementById("services").innerHTML += `

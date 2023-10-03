@@ -5,4 +5,4 @@ RUN npm install
 RUN npm ci --omit=dev
 COPY . .
 EXPOSE 80
-CMD [ "node", "moonlandr.js" ]
+CMD [ "node", "src/moonlandr.js" ]
