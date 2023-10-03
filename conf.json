@@ -1,0 +1,17 @@
+{
+    "owner": "Josh",
+    "host": "http://192.168.1.105",
+    "services": [{
+            "name": "Cockpit",
+            "port": "9090"
+        },
+        {
+            "name": "Portainer",
+            "port": "9000"
+        },
+        {
+            "name": "Home Assistant",
+            "port": "8123"
+        }
+    ]
+}

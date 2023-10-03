@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-shadow: 0 0 40px black;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(22, 22, 22, 1);
+    color: rgba(222, 222, 222, 0.9);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4rem rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+    height: 8rem;
+    transition: 0.1s ease-in-out all;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+h1 {
+    vertical-align: middle;
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: auto;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin: 16px;
+}
+
+.title {
+    margin: 0;
+}
+
+.weather {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.timestamp {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.min {
+    font-size: 2rem;
+}
