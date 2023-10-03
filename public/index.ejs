@@ -9,23 +9,26 @@
     <link rel="manifest" href="/favicon/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moonlandr</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body id="body" onload="render_view();">
 
     <div class="topbar">
         <div class="row top">
-            <img class="logo" src="/logo.png">
+            <img class="logo" src="/assets/img/logo.png">
             <h1 id="title"> Moonlandr</h1>
         </div>
         <div id="timestamp" class="timestamp"></div>
     </div>
     <div class="content">
+        <p>Services</p>
         <div class="row cards" id="services">No Services</div>
+        
+        <p>Automations</p>
     </div>
     <span id="data" hidden><%=data%></span>
 </body>
-<script src="/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </html>

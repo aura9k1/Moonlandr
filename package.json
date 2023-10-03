@@ -5,7 +5,7 @@
   "main": "moonlandr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node moonlandr.js",
+    "start": "nodemon ./src/moonlandr.js",
     "docker-build": "docker build . -t joshpaddy/moonlandr",
     "docker-run": "docker run -p 80:80 -d joshpaddy/moonlandr"
   },

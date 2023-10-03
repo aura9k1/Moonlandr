@@ -1,0 +1,26 @@
+{
+    "owner": "Josh",
+    "bgImage": "/assets/img/bg.png",
+    "services": [
+        {
+            "name": "WAN",
+            "url": "http://192.168.0.1"
+        }, 
+        {
+            "name": "WIFI",
+            "url": "http://192.168.1.1"
+        }, 
+        {
+            "name": "Cockpit",
+            "url": "http://192.168.1.105:9090"
+        },
+        {
+            "name": "Portainer",
+            "url": "http://192.168.1.105:9000"
+        },
+        {
+            "name": "Home Assistant",
+            "url": "http://192.168.1.105:8123"
+        }
+    ]
+}
