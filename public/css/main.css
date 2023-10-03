@@ -7,13 +7,14 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    text-shadow: 0 0 40px black;
+    text-shadow: 0 0 2rem black;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-image: url("/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,14 +23,13 @@ body {
     color: rgba(222, 222, 222, 0.9);
     text-align: center;
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
 .content {
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: row;
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem;
     border-radius: 10px;
     box-shadow: inset 0 0 4rem rgba(255, 255, 255, 0.5);
@@ -71,11 +71,13 @@ body {
 h1 {
     vertical-align: middle;
     margin: 0;
+    font-weight: 400;
 }
 
 h3 {
     text-align: center;
     width: 100%;
+    font-weight: 400;
 }
 
 .topbar {
@@ -96,31 +98,23 @@ h3 {
 .logo {
     width: 64px;
     height: 64px;
-    margin: 16px;
+    margin: 0px 16px;
 }
 
 .title {
     margin: 0;
 }
 
-.weather {
-    position: relative;
-    right: 0;
-    top: 28px;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    visibility: collapse;
-}
-
 .timestamp {
     text-align: right;
     position: relative;
-    right: 0;
+    right: 10px;
+    margin-right: 1rem;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     width: 100%;
     flex: 1;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     white-space: nowrap;
 }
 
@@ -146,10 +140,10 @@ h3 {
     h1 {
         vertical-align: middle;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
-    .weather .timestamp {
+    .timestamp {
         font-size: 1rem;
         padding: 0rem;
         margin: 0rem;
@@ -160,5 +154,10 @@ h3 {
 
     .topbar {
         padding: 0;
+    }
+    .logo {
+        width: 32px;
+        height: 32px;
+        margin: 8px;
     }
 }

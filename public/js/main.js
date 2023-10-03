@@ -5,8 +5,6 @@ function render_view() {
 
     update_title();
     update_services();
-
-    update_weather();
     tick();
 }
 
@@ -24,29 +22,6 @@ function update_services() {
             <h3>${data.services[i].name}</h3>
         </div>`
     }
-}
-
-function update_weather() {
-    console.log(navigator.geolocation.getCurrentPosition(showPosition));
-
-}
-
-function showPosition(position) {
-    console.log(
-        "Latitude: " + position.coords.latitude +
-        "Longitude: " + position.coords.longitude);
-
-        let url = `https://api.open-meteo.com/v1/forecast?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&current_weather=true`;
-        fetch(url)
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                console.log(data)
-                document.getElementById("weather").innerHTML = `
-                ${data.current_weather.temperature}<sup>${data.current_weather_units.temperature}</sup>`;
-            })
-
 }
 
 function tick(){
